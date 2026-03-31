@@ -231,7 +231,7 @@ If you want to contribute to Toast.js or have suggestions on improvement, feel f
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ---
-Feature Comparison
+## Feature Comparison
 
 | Feature                     | Original Toast.js | Roi‑feature‑branch |
 |-----------------------------|:-----------------:|:------------------:|
