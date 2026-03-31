@@ -1,6 +1,4 @@
 
-Here is the complete README.md – original documentation untouched, with Roi‑feature‑branch enhancements shown side‑by‑side in blockquotes, including relevant examples that mirror the original centered and context‑based patterns, plus the promise example as an extra. Copy the entire block below.
-
 ```markdown
 # Toast.js Documentation
 
