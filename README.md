@@ -231,17 +231,6 @@ If you want to contribute to Toast.js or have suggestions on improvement, feel f
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ---
- ## Enhanced Features (Roi‑feature‑branch)
-
-· Advanced positioning: top, bottom, corners
-· Stacking multiple toasts
-· Optional icons
-· Optional close button
-· Animation support (fade/slide)
-· Promise‑based toast handling with auto‑update and auto‑hide
-· Custom CSS class support
-· Accessibility improvements (ARIA roles)
----
 Feature Comparison
 
 | Feature                     | Original Toast.js | Roi‑feature‑branch |
