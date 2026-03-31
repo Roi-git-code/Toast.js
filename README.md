@@ -19,7 +19,6 @@ Toast.js is a lightweight and customizable library for displaying toast notifica
 6. [Contributing](#contributing)
 7. [License](#license)
 
----
 
 ## Installation
 
@@ -33,7 +32,7 @@ or
 <script src="https://cdn.jsdelivr.net/gh/silivestir/Toast.js@main/Toast.min.js"></script>
 ```
 
-Option 2: Importing in JavaScript
+## Option 2: Importing in JavaScript
 
 If you are using a module system, import it as follows:
 
@@ -44,11 +43,10 @@ import Toast from 'https://cdn.jsdelivr.net/gh/silivestir/Toast.js@main/Toast.mi
 Roi‑feature‑branch Enhancements
 You can use the same installation. The enhancements (stacking, icons, close buttons, animations, promise‑based handling, accessibility improvements) are included in the same JS file; no extra imports are needed.
 
----
 
-Usage
+## Usage
 
-Creating a Toast
+## Creating a Toast
 
 To create and display a toast notification, you can use the makeText static method provided by the Toast class.
 
@@ -69,7 +67,7 @@ new Toast({
 }).show("Enhanced toast notification!");
 ```
 
-Parameters Explained
+## Parameters Explained
 
 · message (string): The message you want to display in the toast.
 · duration (number, optional): The time (in milliseconds) for which the toast should be visible before it fades out. Default is 3000 (3 seconds).
@@ -84,7 +82,7 @@ Roi‑feature‑branch Additions
 · animation: 'fade' or 'slide'
 · className: custom CSS class
 
-Example Usage
+## Example Usage
 
 To create a centered toast:
 
@@ -104,7 +102,7 @@ To create a toast positioned below a specific element:
 
 Roi‑feature‑branch Examples
 
-1. Centered toast with icon and close button
+## 1. Centered toast with icon and close button
 
 ```javascript
 new Toast({
@@ -115,7 +113,7 @@ new Toast({
 }).show("Congratulations! You've mastered the enhanced toast.");
 ```
 
-2. Context‑based toast with advanced positioning and slide animation
+## 2. Context‑based toast with advanced positioning and slide animation
 
 ```html
 <div id="myEnhancedElement">Hover me</div>
@@ -130,7 +128,7 @@ new Toast({
 </script>
 ```
 
-3. Promise‑based toast (loading / success / error)
+## 3. Promise‑based toast (loading / success / error)
 
 ```javascript
 Toast.promise(fetchData(), {
@@ -142,9 +140,9 @@ Toast.promise(fetchData(), {
 
 ---
 
-Functions and Their Explanations
+## Functions and Their Explanations
 
-Constructor
+## Constructor
 
 ```javascript
 constructor()
@@ -155,7 +153,7 @@ constructor()
 
 Roi‑feature‑branch: Prepares optional icons, close button, animations, and ARIA accessibility attributes.
 
-configureToastElement
+## configureToastElement
 
 ```javascript
 configureToastElement()
@@ -170,7 +168,7 @@ configureToastElement()
 
 Roi‑feature‑branch: Adds optional custom class and ARIA accessibility attributes.
 
-show
+## show
 
 ```javascript
 show(message, duration = 3000, color = "#333", contextId)
@@ -186,7 +184,7 @@ show(message, duration = 3000, color = "#333", contextId)
 
 Roi‑feature‑branch: Supports multiple stacking, animations, icons, close button, advanced positions, and promise‑based handling.
 
-makeText
+## makeText
 
 ```javascript
 static makeText(message, duration = 3000, color = "#333", contextId)
@@ -200,7 +198,7 @@ Roi‑feature‑branch: Supports enhanced options object while retaining origina
 
 ---
 
-Why Use Toast.js?
+## Why Use Toast.js?
 
 · Lightweight & Minimalistic: Standalone without dependencies, ensuring fast load times.
 · Customizable: Easily adjustable defaults and styles to fit your application's design.
@@ -210,7 +208,7 @@ Why Use Toast.js?
 
 ---
 
-Customization
+## Customization
 
 Toast.js allows you to customize the following aspects:
 
@@ -222,19 +220,18 @@ Toast.js allows you to customize the following aspects:
 
 ---
 
-Contributing
+## Contributing
 
 If you want to contribute to Toast.js or have suggestions on improvement, feel free to reach out via email at silvestiriassey@gmail.com. Your feedback and contributions are welcome!
 
 ---
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ---
-
- Enhanced Features (Roi‑feature‑branch)
+ ## Enhanced Features (Roi‑feature‑branch)
 
 · Advanced positioning: top, bottom, corners
 · Stacking multiple toasts
@@ -244,7 +241,7 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 · Promise‑based toast handling with auto‑update and auto‑hide
 · Custom CSS class support
 · Accessibility improvements (ARIA roles)
-
+---
 Feature Comparison
 
 | Feature                     | Original Toast.js | Roi‑feature‑branch |
