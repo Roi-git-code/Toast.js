@@ -187,20 +187,27 @@
             toast.show(message);
         }
 
-        static async promise(promise, messages) {
-            const toast = new Toast({ duration: 0 });
-            toast.show(messages.loading);
+  static async promise(promise, messages) {
+    const toast = new Toast({ duration: 0 });
+    toast.show(messages.loading);
 
-            try {
-                await promise;
-                toast.options.color = "green";
-                toast.setContent(messages.success);
-            } catch {
-                toast.options.color = "red";
-                toast.setContent(messages.error);
-            }
-        }
+    try {
+        await promise;
+        toast.options.color = "green";
+        toast.setContent(messages.success);
+
+        // Auto-hide after 4 seconds
+        setTimeout(() => toast.hide(),4000);
+    } catch {
+        toast.options.color = "red";
+        toast.setContent(messages.error);
+
+        // Auto-hide after 4 seconds
+        setTimeout(() => toast.hide(), 4000);
     }
+  }
+
+  }
 
     global.Toast = Toast;
 
