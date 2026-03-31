@@ -1,5 +1,3 @@
-
-```markdown
 # Toast.js Documentation
 
 Toast.js is a lightweight and customizable library for displaying toast notifications in web applications. This documentation covers everything from installation to usage, with detailed explanations of each function and its benefits.
@@ -236,7 +234,7 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ---
 
-🚀 Enhanced Features (Roi‑feature‑branch)
+ Enhanced Features (Roi‑feature‑branch)
 
 · Advanced positioning: top, bottom, corners
 · Stacking multiple toasts
@@ -249,19 +247,18 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 Feature Comparison
 
-Feature Original Toast.js Roi‑feature‑branch
-Basic toast notifications ✅ ✅
-Positioning control Basic Advanced (top, bottom, corners)
-Multiple toasts stacking ❌ ✅
-Icons support ❌ ✅
-Close button ❌ ✅
-Animations (fade/slide) ❌ ✅
-Promise‑based handling ❌ ✅
-Custom CSS classes ❌ ✅
-Accessibility (ARIA) ❌ ✅
-
+| Feature                     | Original Toast.js | Roi‑feature‑branch |
+|-----------------------------|:-----------------:|:------------------:|
+| Basic toast notifications   | ✅                | ✅                 |
+| Positioning control         | Basic             | Advanced (top, bottom, corners) |
+| Multiple toasts stacking    | ❌                | ✅                 |
+| Icons support               | ❌                | ✅                 |
+| Close button                | ❌                | ✅                 |
+| Animations (fade/slide)     | ❌                | ✅                 |
+| Promise‑based handling      | ❌                | ✅                 |
+| Custom CSS classes          | ❌                | ✅                 |
+| Accessibility (ARIA)        | ❌                | ✅                 |
 ---
 
 This documentation should help you effectively use and customize Toast.js for your projects. If you have further questions, reach out via email or start contributing! Enjoy creating your toast notifications!
 
-```
