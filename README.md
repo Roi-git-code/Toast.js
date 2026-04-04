@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> eee715f (Updated Toast.js with Additional optinal features)
 # Toast.js Documentation
 
 Toast.js is a lightweight and customizable library for displaying toast notifications in web applications. This documentation covers everything from installation to usage, with detailed explanations of each function and its benefits.
@@ -50,13 +54,40 @@ To create and display a toast notification, you can use the `makeText` static me
 Toast.makeText("This is a toast message!", 3000, "#ff5733");
 ```
 
+<<<<<<< HEAD
 ### Parameters Explained
+=======
+### With  ROI Enhancement
+```javascript
+new Toast({
+  position: "top-right",
+  icon: "✨",
+  closable: true,
+  duration: 4000,
+  animation: "slide",
+  className: "my-custom-toast"
+}).show("Enhanced toast notification!");
+```
+
+## Parameters Explained
+>>>>>>> eee715f (Updated Toast.js with Additional optinal features)
 
 - **message** (string): The message you want to display in the toast.
 - **duration** (number, optional): The time (in milliseconds) for which the toast should be visible before it fades out. Default is `3000` (3 seconds).
 - **color** (string, optional): The background color of the toast. Default is `#333`.
 - **contextId** (string, optional): The ID of the HTML element the toast will be positioned relative to. If not provided, the toast will be centered in the viewport.
 
+<<<<<<< HEAD
+=======
+## With ROI, Additional parameters
+
+- **position** (string, optional): Includes 'top', 'bottom', 'top-right', 'bottom-left', etc.
+- **icon** (emoji or custom string, optional): This depends on the message ie Success, error, laoding..
+- **closable** (boolean, optional):  close button.
+- **animation** ('fade' or 'slide'): Determines how the toast will leave the.
+- **className** (custom CSS class, optional): .
+
+>>>>>>> eee715f (Updated Toast.js with Additional optinal features)
 ### Example Usage
 
 To create a centered toast:
@@ -65,6 +96,19 @@ To create a centered toast:
 Toast.makeText("Hello, world!", 3000, "#28a745");
 ```
 
+<<<<<<< HEAD
+=======
+## With  ROI Enhancement using **promise** for UX feedback
+
+```javascript
+Toast.promise(fetchData(), {
+  loading: "Loading data…",
+  success: "Data loaded successfully!",
+  error: "Failed to load data."
+});
+```
+
+>>>>>>> eee715f (Updated Toast.js with Additional optinal features)
 To create a toast positioned below a specific element:
 
 ```html
@@ -149,3 +193,8 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ---
 
 This documentation should help you effectively use and customize Toast.js for your projects. If you have further questions, reach out via email or start contributing! Enjoy creating your toast notifications!
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> eee715f (Updated Toast.js with Additional optinal features)

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Toast.js Advanced Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .custom-toast {
+            font-weight: bold;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+
+<h2>🔥 Toast.js Advanced Demo</h2>
+
+<!-- Basic -->
+<button onclick="basicToast()">Basic Toast</button>
+
+<!-- Positions -->
+<button onclick="topToast()">Top</button>
+<button onclick="bottomToast()">Bottom</button>
+<button onclick="topRightToast()">Top Right</button>
+<button onclick="bottomLeftToast()">Bottom Left</button>
+
+<!-- Icons -->
+<button onclick="iconToast()">Icon Toast</button>
+
+<!-- Closable -->
+<button onclick="closableToast()">Closable Toast</button>
+
+<!-- Animation -->
+<button onclick="animatedToast()">Slide Animation</button>
+
+<!-- Stacking -->
+<button onclick="stackingToast()">Stacking Test</button>
+
+<!-- Context -->
+<button id="contextBtn">Context Toast</button>
+
+<!-- Promise -->
+<button onclick="promiseToast()">Promise Toast</button>
+
+<!-- Custom Class -->
+<button onclick="customClassToast()">Custom Style</button>
+
+<script src="Toast.js"></script>
+
+<script>
+// ✅ Basic
+function basicToast() {
+    Toast.makeText("Hello World!");
+}
+
+// ✅ Position tests
+function topToast() {
+    Toast.makeText("Top Toast", { position: "top" });
+}
+
+function bottomToast() {
+    Toast.makeText("Bottom Toast", { position: "bottom" });
+}
+
+function topRightToast() {
+    Toast.makeText("Top Right Toast", { position: "top-right" });
+}
+
+function bottomLeftToast() {
+    Toast.makeText("Bottom Left Toast", { position: "bottom-left" });
+}
+
+// ✅ Icon
+function iconToast() {
+    Toast.makeText("Success!", {
+        icon: "✅",
+        color: "green"
+    });
+}
+
+// ✅ Closable
+function closableToast() {
+    Toast.makeText("Click × to close", {
+        closable: true,
+        duration: 5000,
+        icon: "✅",
+        color: "green"
+    });
+}
+
+// ✅ Animation
+function animatedToast() {
+    Toast.makeText("Sliding in!", {
+        animation: "slide",
+        position: "top-right"
+    });
+}
+
+// ✅ Stacking
+function stackingToast() {
+    Toast.makeText("One");
+    Toast.makeText("Two");
+    Toast.makeText("Three");
+    Toast.makeText("Four");
+}
+
+// ✅ Context
+document.getElementById("contextBtn").onclick = () => {
+    Toast.makeText("Attached to button", {
+        contextId: "contextBtn"
+    });
+};
+
+// ✅ Promise
+function promiseToast() {
+    Toast.promise(
+        new Promise(resolve => setTimeout(resolve, 2000)),
+        {
+            loading: "Loading...",
+            success: "Done!",
+            error: "Failed!"
+        }
+    );
+}
+
+// ✅ Custom Class
+function customClassToast() {
+    Toast.makeText("Custom Styled!. You can styke your toast container based on User Interface and User Experience design", {
+        className: "custom-toast",
+        color: "purple",
+        closable: true,
+        duration: 5000,
+        icon: "✅"
+    });
+}
+</script>
+
+</body>
+</html>
+
+
