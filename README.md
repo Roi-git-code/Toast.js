@@ -61,7 +61,7 @@ new Toast({
   animation: "slide",
   className: "my-custom-toast"
 }).show("Enhanced toast notification!");
-'''
+``
 
 ## Parameters Explained
 
