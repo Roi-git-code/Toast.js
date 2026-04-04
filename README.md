@@ -51,7 +51,7 @@ To create and display a toast notification, you can use the `makeText` static me
 Toast.makeText("This is a toast message!", 3000, "#ff5733");
 ```
 
-## With  ROI Enhancement
+### With  ROI Enhancement
 ```javascript
 new Toast({
   position: "top-right",
@@ -63,7 +63,7 @@ new Toast({
 }).show("Enhanced toast notification!");
 '''
 
-### Parameters Explained
+## Parameters Explained
 
 - **message** (string): The message you want to display in the toast.
 - **duration** (number, optional): The time (in milliseconds) for which the toast should be visible before it fades out. Default is `3000` (3 seconds).
@@ -72,11 +72,12 @@ new Toast({
 
 ## With ROI, Additional parameters
 
-- **position:(string, optional)**: Includes 'top', 'bottom', 'top-right', 'bottom-left', etc.
-- **icon: (emoji or custom string, optional): This depends on the message ie Success, error, laoding..
-- **closable: (boolean, optional):  close button
-- **animation: ('fade' or 'slide'): Determines how the toast will leave the 
-- **className: (custom CSS class, optional)**
+- **position** (string, optional): Includes 'top', 'bottom', 'top-right', 'bottom-left', etc.
+- **icon** (emoji or custom string, optional): This depends on the message ie Success, error, laoding..
+- **closable** (boolean, optional):  close button.
+- **animation** ('fade' or 'slide'): Determines how the toast will leave the.
+- **className** (custom CSS class, optional): .
+
 ### Example Usage
 
 To create a centered toast:
@@ -86,6 +87,7 @@ Toast.makeText("Hello, world!", 3000, "#28a745");
 ```
 
 ## With  ROI Enhancement using **promise** for UX feedback
+
 ```javascript
 Toast.promise(fetchData(), {
   loading: "Loading data…",
